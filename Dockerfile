@@ -5,3 +5,5 @@ ADD sgx-init /home/
 ADD config.json /home/
 
 RUN cd /home/ && chmod +777 sgx-init && chmod +777 config.json
+
+RUN cd /home && ./sgx-init
